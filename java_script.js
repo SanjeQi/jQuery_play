@@ -1,12 +1,20 @@
-// Select an id
-$('circle').click(function () {
-  alert('id Clicked!!');
+// Changing the paragraph text on click
+$('#circle').click(function () {
+  $('p').html('No longer a random text.Text has been changed');
 });
-// Selecti  a class
-$('.box').click(function () {
-  alert('class Clicked!!');
+
+/* Returning the content of the paragraph : $("p").html()
+    Changing the content of the paragraph : $("p").html("replacing the old text")
+*/
+alert($('p').html());
+
+// Changing the paragraph text on hover
+
+$('#circle').hover(function () {
+  $('p').html('Text was changed on hover');
 });
-// Select  an element
-$('div').click(function () {
-  alert('div Clicked!!');
+
+// Changing an at attribute of a particular element
+$('#circle').click(function () {
+  $('iframe').attr('src', 'https://www.meteoblue.com/');
 });
