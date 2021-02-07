@@ -1,30 +1,39 @@
-//Changing styles
-$('body').click(function () {
-  $('.box').css('width', '200px');
-  $('.box').css('height', '200px');
+//********** Click on the button to fadeOut/fadeIn the p tag
+$('#btn1').click(function () {
+  $('p').fadeOut();
 });
 
-//Selecting the element that I clicked on and changing styles
-$('div').click(function () {
-  $(this).css('background-color', 'red');
+$('#btn2').click(function () {
+  $('p').fadeIn();
 });
 
-//Click the item and it disappears v1
-$('div').click(function () {
-  $(this).css('display', 'none');
+//********** Changing the fade speed v1
+$('#btn1').click(function () {
+  $('p').fadeOut(500);
 });
 
-//Click the item and it disappears v2
-$('div').click(function () {
-  $(this).hide();
+$('#btn2').click(function () {
+  $('p').fadeIn(600);
 });
 
-//Click the item and it disappears v3
-$('div').click(function () {
-  $(this).fadeOut();
+//********** Changing the fade speed v2
+$('#btn1').click(function () {
+  $('p').fadeOut('slow');
 });
 
-//Click on the circle and fadeOut the boxes
-$('#circle').click(function () {
-  $('.box').fadeOut();
+$('#btn2').click(function () {
+  $('p').fadeIn('fast');
+});
+
+//********** Changing the fade with a callback function
+$('#btn1').click(function () {
+  $('p').fadeOut('slow', function () {
+    console.log('Fade out complete');
+  });
+});
+
+$('#btn2').click(function () {
+  $('p').fadeIn('slow', function () {
+    console.log('Fade In complete');
+  });
 });
