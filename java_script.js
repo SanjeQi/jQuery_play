@@ -1,20 +1,30 @@
-// Changing the paragraph text on click
-$('#circle').click(function () {
-  $('p').html('No longer a random text.Text has been changed');
+//Changing styles
+$('body').click(function () {
+  $('.box').css('width', '200px');
+  $('.box').css('height', '200px');
 });
 
-/* Returning the content of the paragraph : $("p").html()
-    Changing the content of the paragraph : $("p").html("replacing the old text")
-*/
-alert($('p').html());
-
-// Changing the paragraph text on hover
-
-$('#circle').hover(function () {
-  $('p').html('Text was changed on hover');
+//Selecting the element that I clicked on and changing styles
+$('div').click(function () {
+  $(this).css('background-color', 'red');
 });
 
-// Changing an at attribute of a particular element
+//Click the item and it disappears v1
+$('div').click(function () {
+  $(this).css('display', 'none');
+});
+
+//Click the item and it disappears v2
+$('div').click(function () {
+  $(this).hide();
+});
+
+//Click the item and it disappears v3
+$('div').click(function () {
+  $(this).fadeOut();
+});
+
+//Click on the circle and fadeOut the boxes
 $('#circle').click(function () {
-  $('iframe').attr('src', 'https://www.meteoblue.com/');
+  $('.box').fadeOut();
 });
