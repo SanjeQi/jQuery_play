@@ -23,6 +23,9 @@ p {
   background-color: rgb(216, 222, 135);
   border-radius: 5px;
 }
+h1 {
+  line-height: 2rem;
+}
 
 #btn1 {
   padding: 1rem;
