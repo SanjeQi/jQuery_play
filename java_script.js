@@ -1,30 +1,35 @@
-// Loading data with AJAX
+// Regex case sensitive
 
-// jQuery get function
-$.get('test.html', function (data) {
-  console.log(data);
-});
+let regex = /great/;
+let string = 'Regex is great!';
 
-//jQuery ajax function
-$.ajax({ url: 'test.html' }).done(function (data) {
-  console.log(data);
-});
+let result = string.match(regex);
+console.log(result);
 
-//jQuery after an ajax call change the h1 content
-$.ajax({ url: 'test.html' }).done(function (data) {
-  $('h1').html(data);
-});
+/* Returning "null" if the word "great" is not present in the sting and the output below id it is
 
-//jQuery changing text after an ajax call
-$.ajax({ url: 'test.html' }).done(function (data) {
-  $('#btn1').click(function () {
-    $('h1').html(data);
-  });
-});
+["great", index: 9, input: "Regex is great!", groups: undefined]
+0: "great"
+groups: undefined
+index: 9
+input: "Regex is great!"
+length: 1
+__proto__: Array(0)
 
-//jQuery appending text after an ajax call
-$.ajax({ url: 'test.html' }).done(function (data) {
-  $('#btn1').click(function () {
-    $('h1').append(data);
-  });
-});
+*/
+
+// Regex case insensitive
+
+regex = /great/i;
+string = 'Regex is Great!';
+
+result = string.match(regex);
+console.log(result);
+
+// Regex global  - search "e" - for every instance -global
+
+regex = /e/g;
+string = 'Regex is Great!';
+
+result = string.match(regex);
+console.log(result);
