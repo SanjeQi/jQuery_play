@@ -13,8 +13,18 @@
   width: 200px;
   background-color: rgb(226, 43, 150);
 }
+#square4 {
+  height: 400px;
+  width: 400px;
+  background-color: rgb(67, 116, 85);
+}
+#square5 {
+  height: 200px;
+  width: 200px;
+  background-color: rgb(228, 89, 64);
+}
 
 h1 {
   text-align: center;
-  margin-top: 100px;
+  margin: 0%;
 }
