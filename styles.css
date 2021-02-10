@@ -1,50 +1,20 @@
-body {
-  font-family: 'Times New Roman', Times, serif;
-  line-height: 1.6rem;
+#square1 {
+  height: 200px;
+  width: 200px;
+  background-color: rgba(238, 176, 5, 0.877);
+}
+#square2 {
+  height: 200px;
+  width: 200px;
+  background-color: blueviolet;
+}
+#square3 {
+  height: 200px;
+  width: 200px;
+  background-color: rgb(226, 43, 150);
 }
 
-#container {
-  background-color: #5b7bb4;
-  border: 1px solid black;
-  border-radius: 5px;
-  padding: 2rem 1rem;
-  width: 670px;
-  margin: 100px auto;
-}
-.form {
-  border-radius: 5px;
-}
-label {
-  width: 10rem;
-  margin-right: 1rem;
-  color: #fff;
-}
-input {
-  display: inline-block;
-  padding: 0.5rem 0.2rem;
-  width: 100%;
-  border: none;
-  border-radius: 5px;
-  margin-bottom: 0.7rem;
-}
-
-.container {
-  display: flex;
-}
-.form_field {
-  display: flex;
-}
-#submitButton {
-  padding: 0.4rem 1.2rem;
-  border-radius: 5px;
-  border: none;
-  background-color: #ffb732;
-  color: black;
-  font-weight: bold;
-  width: 100%;
-  margin-left: 35rem;
-}
-#submitButton:hover {
-  background-color: #a37b34;
-  color: #fff;
+h1 {
+  text-align: center;
+  margin-top: 100px;
 }
